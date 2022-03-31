@@ -3,16 +3,6 @@ html, body{
     width: 100%;
 }
 
-.header {
-    
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 80px; /* some padding */
-    text-align: center; /* center the text */
-    opacity: 0.5; /* green background */
-    color: black; /* white text color */
-}
-
 body{
 	font-family:Verdana;
 	color:rgb(65, 57, 40);
@@ -30,8 +20,7 @@ body{
 }
 
 nav{
-margin-left: 800px;
-position: fixed;
+position: relative;
 float:right;
 }
 
@@ -45,15 +34,13 @@ a{
     color:rgb(65, 57, 40);
 }
 ul{
-    margin-left: 0px;
-    width: 100%;
-    background-color: aliceblue;
+    background-color: white;
 }
-ul li{
-
+#navbarli{
   display: inline-block; 
-  padding:40px;
-  font-size:24px; font-family:Arial, Helvetica, sans-serif;
+  padding:30px;
+  font-size:24px; 
+  font-family:Arial, Helvetica, sans-serif;
   
 }
 
@@ -77,25 +64,42 @@ ul li a:hover{
     background-size: cover;
   }
 
-.strip{
-    height: 1000px;
-    background-color:whitesmoke ;
+ul li{
+    display: inline-block;
 }
 
-#image1strip{
-    margin-left: 50px;
-    padding: 50px;
-}
-#image2strip{
-    padding: 80px;
-}
-#image3strip{
-    padding: 50px;
-    margin-right: 50px;
-}
+
 
 #logo{
     height: 120px;
     width: 120px;
     margin-left: 30px;
+}
+
+.strip{   
+    width: 1700px;
+    height: 800px;
+    margin-top:100px;
+    margin-left: auto; 
+    margin-right: auto;
+    overflow: hidden;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+.strip img{
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+#image2strip{
+    padding-top: 70px;
 }
