@@ -5,12 +5,13 @@ html, body{
 
 body{
 	font-family:Verdana;
-	color:rgb(65, 57, 40);
+	color:rgb(51, 48, 40);
 	width: 100%;
 	margin: auto;
-	text-transform: capitalize;
     overflow: auto;
 }
+
+
 
 *{transition:all 0.3s ease-in-out;}
 
@@ -20,40 +21,40 @@ body{
 }
 
 nav{
-position: relative;
-float:right;
+    text-transform: capitalize;
+    position: relative;
+    float:right;
 }
 
 .logo img{
     float:left;
-    height: 220px;
-    width: 220px;
 }
 a{
     text-decoration: none;
-    color:rgb(65, 57, 40);
+    color:rgb(68, 60, 42);
 }
-ul{
-    background-color: white;
-}
+
 #navbarli{
   display: inline-block; 
-  padding:30px;
-  font-size:24px; 
+  padding:1vw;
+  font-size:1.3vw; 
   font-family:Arial, Helvetica, sans-serif;
-  
+  font-weight: bolder;
 }
 
 ul li a:hover{
-  color:rgb(168, 155, 131);
+  color:white;
+}
+ul li:hover{
+    background-color: rgba(139, 119, 93, 0.746);
+    border-radius: 30%;
 }
 
 
 
 .parallax {
     /* The image used */
-    background-image: url("parallax.jpg");
-    opacity: 0.7;
+    background-image: url("bobaparallax.png");
     /* Set a specific height */
     min-height: 1000px;
   
@@ -62,7 +63,9 @@ ul li a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
+
+
 
 ul li{
     display: inline-block;
@@ -71,27 +74,30 @@ ul li{
 
 
 #logo{
-    height: 120px;
-    width: 120px;
-    margin-left: 30px;
+    height: 5vw;
+    width: 7vw;
+    margin-left: 5vw;
 }
 
 .strip{   
-    width: 1700px;
-    height: 800px;
-    margin-top:100px;
+    width: 100%;
+    height: -100vh;
     margin-left: auto; 
     margin-right: auto;
     overflow: hidden;
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
+    background-color: rgba(240, 226, 208, 0.849);
 }
 .strip img{
+    padding-top: 20vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
     vertical-align: top;
     display: inline-block;
     *display: inline;
-    zoom: 1;
+    zoom: 0.9;
 }
 .stretch {
     width: 100%;
@@ -100,6 +106,20 @@ ul li{
     line-height: 0
 }
 
-#image2strip{
-    padding-top: 70px;
+#welcomeheading{
+    font-size: 3vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: 5vw;
+    text-align: center;
+    text-shadow: 1vw 1vh rgba(102, 94, 83, 0.3);
+    margin-top: 20vh;
+    font-weight: bolder;
+    width: max-content;
+    padding: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#welcomeheadingcontainer{
+   
 }
